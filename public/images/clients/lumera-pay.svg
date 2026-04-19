@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" role="img" aria-labelledby="title">
+  <title>Lumera Pay</title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#111316" d="M18 18h44c5.5 0 10 4.5 10 10v24c0 5.5-4.5 10-10 10H18V18Z"/>
+    <path fill="#FFFFFF" d="M30 30h14v20H30z"/>
+    <path fill="#FF5C8A" d="M46 30h14v20H46z"/>
+    <path fill="#55D0E6" d="M38 38h14v20H38z"/>
+    <text x="92" y="49" fill="#111316" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="760">Lumera Pay</text>
+  </g>
+</svg>

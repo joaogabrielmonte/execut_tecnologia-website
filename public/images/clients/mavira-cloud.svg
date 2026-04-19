@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" role="img" aria-labelledby="title">
+  <title>Mavira Cloud</title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#101114" d="M31 20h26c11.6 0 21 9.4 21 21s-9.4 21-21 21H31c-11.6 0-21-9.4-21-21s9.4-21 21-21Z"/>
+    <path fill="#57D6B8" d="M32 31h13.5c5.5 0 10 4.5 10 10s-4.5 10-10 10H32c-5.5 0-10-4.5-10-10s4.5-10 10-10Z"/>
+    <path fill="#8DB7FF" d="M51 31h6.5c5.5 0 10 4.5 10 10s-4.5 10-10 10H51c5.5 0 10-4.5 10-10s-4.5-10-10-10Z"/>
+    <text x="94" y="49" fill="#101114" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="750">Mavira Cloud</text>
+  </g>
+</svg>

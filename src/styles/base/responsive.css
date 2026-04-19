@@ -1,0 +1,203 @@
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 1060px) {
+  .desktop-nav,
+  .header-cta {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .about-grid,
+  .final-cta-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta-action {
+    width: min(100%, 360px);
+    min-width: 0;
+    justify-content: flex-start;
+    justify-self: start;
+  }
+
+  .bento-grid,
+  .testimonials-grid,
+  .page-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-title,
+  .final-cta h2 {
+    font-size: 44px;
+  }
+
+  .hero-stack {
+    width: min(90vw, 640px);
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-clean-static {
+    padding: 118px 0 64px;
+    min-height: auto;
+  }
+
+  .hero-clean-static__inner {
+    min-height: auto;
+  }
+
+  .hero-stack {
+    width: min(94vw, 520px);
+    min-height: 420px;
+    height: 420px;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-stack__guide--left {
+    left: 11%;
+  }
+
+  .hero-stack__guide--right {
+    right: 11%;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .header-inner {
+    min-height: 74px;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .hero-clean-static {
+    min-height: 74vh;
+    padding: 108px 0 44px;
+  }
+
+  .hero-stack {
+    width: min(94vw, 360px);
+    height: 320px;
+    min-height: 320px;
+  }
+
+  .hero-stack__guide {
+    top: 18%;
+    height: 50%;
+  }
+
+  .hero-stack__guide--left {
+    left: 7%;
+  }
+
+  .hero-stack__guide--right {
+    right: 7%;
+  }
+
+  .hero-stack__layer {
+    border-radius: 8px;
+  }
+
+  .hero-stack__layer--top {
+    top: 9%;
+    width: 56%;
+    height: 30%;
+  }
+
+  .hero-stack__layer--middle {
+    top: 42%;
+    width: 68%;
+    height: 28%;
+  }
+
+  .hero-stack__layer--bottom {
+    top: 62%;
+    width: 68%;
+    height: 18%;
+  }
+
+  .hero-stack__layer--bottom::after {
+    inset: 8px;
+    border-radius: 8px;
+  }
+
+  .hero-stack__logo {
+    width: 56%;
+  }
+
+  .hero-stack__core {
+    width: 16%;
+    height: 34%;
+  }
+
+  .bento-grid,
+  .testimonials-grid,
+  .page-card-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section,
+  .clients-section,
+  .final-cta,
+  .site-footer {
+    padding: 84px 0;
+  }
+
+  .page-hero {
+    padding: 132px 0 84px;
+  }
+
+  .page-hero h1,
+  .section-title,
+  .final-cta h2,
+  .clients-heading h2 {
+    font-size: 34px;
+  }
+
+  .section-subtitle,
+  .page-hero p,
+  .final-cta p,
+  .testimonial-card p,
+  .bento-card p {
+    font-size: 16px;
+  }
+
+  .final-cta-action {
+    display: grid;
+    justify-items: start;
+    min-height: 210px;
+    gap: 18px;
+  }
+
+  .final-cta-logo {
+    width: min(78vw, 236px);
+  }
+
+  .hero-actions {
+    display: grid;
+  }
+
+  .footer-links,
+  .footer-bottom {
+    display: grid;
+    gap: 18px;
+  }
+}

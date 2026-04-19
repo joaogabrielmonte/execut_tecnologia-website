@@ -1,0 +1,92 @@
+/* =========================
+   FOOTER
+   ========================= */
+
+.site-footer {
+  padding: 72px 0 34px;
+  border-top: 1px solid var(--line);
+  background: var(--soft);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 64px;
+  margin-bottom: 48px;
+  align-items: start;
+}
+
+.footer-brand-block {
+  display: grid;
+  gap: 12px;
+  max-width: 340px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.footer-brand strong {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.footer-tagline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.footer-links {
+  display: flex;
+  gap: 56px;
+}
+
+.footer-col h5 {
+  margin: 0 0 14px;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-col a {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  transition: color 180ms ease;
+}
+
+.footer-col a:hover,
+.footer-email:hover {
+  color: var(--red);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.footer-copy,
+.footer-email {
+  color: var(--muted);
+  font-size: 13px;
+}

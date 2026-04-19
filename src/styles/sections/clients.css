@@ -1,0 +1,191 @@
+/* =========================
+   CLIENTS
+   ========================= */
+
+.clients-section {
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--soft);
+}
+
+.clients-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.clients-heading h2 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: clamp(34px, 3.6vw, 44px);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.clients-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.logo-wall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 26px 54px;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 22px 0 6px;
+}
+
+.client-logo-slot {
+  min-height: 82px;
+  flex: 0 1 176px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  transform: translateY(0);
+  transition: transform 180ms ease;
+}
+
+.client-logo-image {
+  width: auto;
+  max-width: min(100%, 188px);
+  max-height: 54px;
+  object-fit: contain;
+  opacity: 0.62;
+  filter: grayscale(1) saturate(0.12) contrast(1);
+  transition:
+    filter 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.client-logo-slot:hover {
+  transform: translateY(-3px);
+}
+
+.client-logo-slot:hover .client-logo-image {
+  opacity: 0.96;
+  filter: grayscale(0) saturate(0.95) contrast(1.02);
+}
+
+.client-logo-slot--locar .client-logo-image {
+  max-width: min(100%, 230px);
+  max-height: 76px;
+  filter: grayscale(1) saturate(0.1) contrast(1.02);
+  opacity: 0.68;
+}
+
+.client-logo-slot--locar {
+  flex-basis: 224px;
+}
+
+.client-logo-slot--locar:hover .client-logo-image {
+  filter: grayscale(0) saturate(0.95) contrast(1.05);
+  opacity: 0.96;
+}
+
+.client-logo-slot--norcola .client-logo-image {
+  max-width: min(100%, 168px);
+  filter: invert(1) grayscale(1) contrast(1.16);
+  opacity: 0.68;
+}
+
+.client-logo-slot--norcola:hover .client-logo-image {
+  filter: invert(1) grayscale(1) contrast(1.2);
+  opacity: 0.92;
+}
+
+@media (max-width: 860px) {
+  .logo-wall {
+    gap: 18px 30px;
+    padding-top: 12px;
+  }
+
+  .client-logo-slot {
+    flex-basis: 142px;
+    min-height: 70px;
+  }
+
+  .client-logo-slot--locar {
+    flex-basis: 166px;
+  }
+}
+
+@media (max-width: 520px) {
+  .logo-wall {
+    gap: 12px 20px;
+  }
+
+  .client-logo-slot {
+    flex-basis: calc(50% - 14px);
+    min-height: 64px;
+  }
+
+  .client-logo-image {
+    max-width: min(100%, 142px);
+    max-height: 44px;
+  }
+
+  .client-logo-slot--locar .client-logo-image {
+    max-height: 58px;
+  }
+}
+.client-logo-slot {
+  min-height: 82px;
+  flex: 0 1 176px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  transform: translateY(0);
+  transition: transform 180ms ease;
+}
+
+.client-logo-image {
+  width: auto;
+  max-width: min(100%, 188px);
+  max-height: 54px;
+  object-fit: contain;
+  opacity: 0.62;
+  filter: grayscale(1) saturate(0.12) contrast(1);
+  transition:
+    filter 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+/* desktop hover */
+.client-logo-slot:hover {
+  transform: translateY(-3px);
+}
+
+.client-logo-slot:hover .client-logo-image {
+  opacity: 0.96;
+  filter: grayscale(0) saturate(0.95) contrast(1.02);
+}
+
+/* mobile / touch reveal */
+.client-logo-slot.is-revealed {
+  transform: translateY(-3px);
+}
+
+.client-logo-slot.is-revealed .client-logo-image {
+  opacity: 0.96;
+  filter: grayscale(0) saturate(0.95) contrast(1.02);
+}
+
+/* variações específicas */
+.client-logo-slot--locar.is-revealed .client-logo-image,
+.client-logo-slot--locar:hover .client-logo-image {
+  filter: grayscale(0) saturate(0.95) contrast(1.05);
+  opacity: 0.96;
+}
+
+.client-logo-slot--norcola.is-revealed .client-logo-image,
+.client-logo-slot--norcola:hover .client-logo-image {
+  filter: invert(1) grayscale(1) contrast(1.2);
+  opacity: 0.92;
+}

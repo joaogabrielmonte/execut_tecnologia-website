@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" role="img" aria-labelledby="title">
+  <title>Veltra Ops</title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#111316" d="M18 18h52v14H44v8h21v14H44v8H18V18Z"/>
+    <path fill="#54C6F0" d="M44 18h26L44 62V18Z"/>
+    <path fill="#32C06C" d="M18 62h26L70 18 18 62Z"/>
+    <text x="92" y="49" fill="#111316" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="760">Veltra Ops</text>
+  </g>
+</svg>

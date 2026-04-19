@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --bg: #ffffff;
+  --soft: #f7f7f8;
+  --soft-2: #efeff2;
+  --ink: #111214;
+  --ink-2: #1a1b1f;
+  --muted: #6f7480;
+  --line: rgba(17, 18, 20, 0.08);
+  --line-strong: rgba(17, 18, 20, 0.16);
+  --red: #b91c1c;
+  --red-bright: #dc2626;
+  --container: 1200px;
+}

@@ -1,0 +1,17 @@
+/* =========================
+   SECTIONS
+   ========================= */
+
+.section,
+.clients-section {
+  padding: 120px 0;
+  background: #ffffff;
+}
+
+.section-soft {
+  background: var(--soft);
+}
+
+.section-edge {
+  border-bottom: 1px solid var(--line);
+}

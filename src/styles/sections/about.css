@@ -1,0 +1,48 @@
+/* =========================
+   ABOUT
+   ========================= */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.metrics-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 16px 38px rgba(17, 18, 20, 0.04);
+}
+
+.metric-item {
+  padding: 30px 32px;
+  border-bottom: 1px solid var(--line);
+  transition: background 180ms ease;
+}
+
+.metric-item:last-child {
+  border-bottom: none;
+}
+
+.metric-item:hover {
+  background: #fafafb;
+}
+
+.metric-item strong {
+  display: block;
+  color: var(--red);
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.metric-item span {
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}

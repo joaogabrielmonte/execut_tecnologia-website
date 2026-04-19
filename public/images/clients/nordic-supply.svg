@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" role="img" aria-labelledby="title">
+  <title>Nordic Supply</title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#14161A" d="M42 12 72 30v34H12V30l30-18Z"/>
+    <path fill="#FFFFFF" d="M26 35h12v17H26zM46 35h12v17H46z"/>
+    <path fill="#A6E15F" d="M12 30h60L42 12 12 30Z"/>
+    <path fill="#5D8DFF" d="M12 52h60v12H12z"/>
+    <text x="90" y="49" fill="#14161A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="760">Nordic Supply</text>
+  </g>
+</svg>

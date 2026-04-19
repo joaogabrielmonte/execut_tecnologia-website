@@ -1,0 +1,49 @@
+/* =========================
+   COMMON TYPOGRAPHY
+   ========================= */
+
+.eyebrow {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 2px;
+  background: var(--red);
+}
+
+.section-heading {
+  display: grid;
+  gap: 22px;
+  max-width: 840px;
+  margin-bottom: 56px;
+}
+
+.section-title {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.04;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.section-subtitle,
+.page-hero p,
+.final-cta p,
+.testimonial-card p,
+.bento-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+}

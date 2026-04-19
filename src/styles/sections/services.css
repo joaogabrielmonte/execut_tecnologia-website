@@ -1,0 +1,134 @@
+/* =========================
+   SERVICES
+   ========================= */
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.bento-card {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 32px;
+  background: #ffffff;
+  overflow: hidden;
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(185, 28, 28, 0.18);
+  box-shadow: 0 22px 54px rgba(17, 18, 20, 0.06);
+}
+
+.bento-card.span2 {
+  grid-column: span 2;
+}
+
+.bento-card.dark {
+  background: var(--ink);
+  border-color: transparent;
+}
+
+.bento-card.dark h3,
+.bento-card.dark p {
+  color: #ffffff;
+}
+
+.bento-card.dark p {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.bento-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  background: rgba(185, 28, 28, 0.08);
+  flex-shrink: 0;
+}
+
+.bento-icon svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  fill: none;
+  stroke: var(--red);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.bento-card h3 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.bento-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.bento-stat {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--red);
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+/* tablet */
+@media (max-width: 1060px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* mobile */
+@media (max-width: 680px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .bento-card,
+  .bento-card.span2 {
+    grid-column: auto;
+  }
+
+  .bento-card {
+    padding: 24px 20px;
+    min-width: 0;
+  }
+
+  .bento-card h3 {
+    font-size: 18px;
+  }
+
+  .bento-card p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .bento-stat {
+    font-size: 38px;
+  }
+}

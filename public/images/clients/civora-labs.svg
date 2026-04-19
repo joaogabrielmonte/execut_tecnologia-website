@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" role="img" aria-labelledby="title">
+  <title>Civora Labs</title>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="43" cy="40" r="26" fill="#15171A"/>
+    <path fill="#F0C84B" d="M43 14a26 26 0 0 1 25.2 32.4H43V14Z"/>
+    <path fill="#EB5E6C" d="M43 66a26 26 0 0 1-25.2-32.4H43V66Z"/>
+    <circle cx="43" cy="40" r="9" fill="#FFFFFF"/>
+    <text x="88" y="49" fill="#15171A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="760">Civora Labs</text>
+  </g>
+</svg>
