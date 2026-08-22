@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 function Button({ children, href, variant = "primary", className = "", ...props }) {
   const classes = `btn btn-${variant} ${className}`.trim();
 
   return (
-    <a href={href} className={classes} {...props}>
+    <Link to={href} className={classes} {...props}>
       {children}
-    </a>
+    </Link>
   );
 }
 

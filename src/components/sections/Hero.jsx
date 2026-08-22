@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import Container from "../layout/Container";
 import Button from "../ui/Button";
 
@@ -25,6 +26,7 @@ function Hero() {
       logo.style.setProperty("--hero-logo-blur", `${progress * 8}px`);
       logo.style.setProperty("--hero-logo-opacity", `${Math.max(0.18, 1 - progress * 0.74)}`);
       logo.style.setProperty("--hero-logo-scale", `${1 + progress * 0.48}`);
+      logo.style.setProperty("--hero-logo-rotate", `${progress * 22}deg`);
 
       if (ghostLogo) {
         ghostLogo.style.setProperty("--ghost-logo-opacity", `${Math.min(ghostOpacity, 0.2)}`);
@@ -83,21 +85,19 @@ function Hero() {
         aria-hidden="true"
       />
 
-      <div className="hero-brand-light__bg" aria-hidden="true">
-        <div className="hero-brand-light__mesh hero-brand-light__mesh--one"></div>
-        <div className="hero-brand-light__mesh hero-brand-light__mesh--two"></div>
-        <div className="hero-brand-light__glow"></div>
-      </div>
+      <div className="hero-brand-light__bg" aria-hidden="true"></div>
 
       <Container>
         <div className="hero-brand-light__inner">
           <div className="hero-brand-light__content fade-up">
-            <img
-              ref={logoRef}
-              src="/images/logoexecut-removebg-preview.png"
-              alt="Execut Tecnologia"
-              className="hero-brand-light__logo"
-            />
+            <div className="hero-brand-light__logo-shell">
+              <img
+                ref={logoRef}
+                src="/images/logoexecut-removebg-preview.png"
+                alt="Execut Tecnologia"
+                className="hero-brand-light__logo"
+              />
+            </div>
 
             <h1>
               Sistemas conectados.
@@ -111,9 +111,9 @@ function Hero() {
 
             <div className="hero-brand-light__actions">
               <Button href="/contato">Conversar sobre operação</Button>
-              <a className="hero-brand-light__quiet-link" href="/sistemas">
+              <Link className="hero-brand-light__quiet-link" to="/sistemas">
                 Sistemas e integrações
-              </a>
+              </Link>
             </div>
           </div>
         </div>

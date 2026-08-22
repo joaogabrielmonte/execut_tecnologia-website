@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function useRevealOnScroll(selector = ".fade-up", threshold = 0.14) {
+  const location = useLocation();
+
   useEffect(() => {
     const animatedItems = document.querySelectorAll(selector);
     if (!animatedItems.length) return undefined;
@@ -19,7 +22,7 @@ function useRevealOnScroll(selector = ".fade-up", threshold = 0.14) {
 
     animatedItems.forEach((item) => observer.observe(item));
     return () => observer.disconnect();
-  }, [selector, threshold]);
+  }, [selector, threshold, location.pathname]);
 }
 
 export default useRevealOnScroll;

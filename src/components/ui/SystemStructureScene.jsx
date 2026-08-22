@@ -77,9 +77,15 @@ function SystemStructureScene({ progress = 0 }) {
     resize();
 
     const clock = new THREE.Clock();
+    const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     let raf = 0;
 
     const animate = () => {
+      if (reducedMotionQuery.matches) {
+        renderer.render(scene, camera);
+        return;
+      }
+
       const elapsed = clock.getElapsedTime();
       const scroll = progressRef.current;
       const easedScroll = THREE.MathUtils.smoothstep(scroll, 0, 1);

@@ -2,6 +2,10 @@
    SECTIONS
    ========================= */
 
+section[id] {
+  scroll-margin-top: 100px;
+}
+
 .section,
 .clients-section {
   padding: 120px 0;

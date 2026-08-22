@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Button from "../ui/Button";
 import Container from "./Container";
 
@@ -12,11 +13,9 @@ const navItems = [
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [locationState, setLocationState] = useState({
-    hash: window.location.hash,
-    path: window.location.pathname,
-  });
-  const { hash: currentHash, path: currentPath } = locationState;
+  const location = useLocation();
+  const currentPath = location.pathname;
+  const currentHash = location.hash;
   const isHome = currentPath === "/";
 
   useEffect(() => {
@@ -44,21 +43,8 @@ function Header() {
   }, []);
 
   useEffect(() => {
-    const syncLocation = () => {
-      setLocationState({
-        hash: window.location.hash,
-        path: window.location.pathname,
-      });
-      setMenuOpen(false);
-    };
-
-    window.addEventListener("hashchange", syncLocation);
-    window.addEventListener("popstate", syncLocation);
-    return () => {
-      window.removeEventListener("hashchange", syncLocation);
-      window.removeEventListener("popstate", syncLocation);
-    };
-  }, []);
+    setMenuOpen(false);
+  }, [location]);
 
   const closeMenu = () => setMenuOpen(false);
   const isNavItemActive = (item) => {
@@ -77,19 +63,19 @@ function Header() {
         }`}
       >
         <Container className="header-inner">
-          <a href="/" className="brand" aria-label="Execut Tecnologia" onClick={closeMenu}>
+          <Link to="/" className="brand" aria-label="Execut Tecnologia" onClick={closeMenu}>
             <img src="/images/logoexecut-symbol.png" alt="" className="brand-image" />
-          </a>
+          </Link>
 
           <nav className="nav desktop-nav" aria-label="Navegação principal">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={item.href}
+                to={item.href}
                 className={isNavItemActive(item) ? "is-active" : ""}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -131,9 +117,9 @@ function Header() {
         </div>
         <nav className="mobile-nav" aria-label="Navegação mobile">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} onClick={closeMenu}>
+            <Link key={item.href} to={item.href} onClick={closeMenu}>
               {item.label}
-            </a>
+            </Link>
           ))}
           <Button href="/contato" onClick={closeMenu}>
             Agendar conversa
